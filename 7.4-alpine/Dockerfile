@@ -55,7 +55,7 @@ CMD ["httpd", "-D", "FOREGROUND"]
 
 EXPOSE 80
 
-FROM web
+FROM web as rootless
 
 ARG USER=siu
 ARG UID=222
