@@ -1,4 +1,4 @@
-FROM alpine:3.13
+FROM alpine:latest
 
 # Set Environments values for PHP
 ENV PHP_MEMORY_LIMIT    256M
