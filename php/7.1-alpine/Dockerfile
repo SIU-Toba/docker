@@ -1,4 +1,4 @@
-FROM alpine:3.7 AS sodium
+FROM alpine:3.14 AS sodium
 RUN apk add \
     php7 \
     php7-pear \
@@ -10,7 +10,7 @@ RUN apk add \
     libsodium-dev \
     && pecl install -f libsodium-1.0.6
 
-FROM alpine:3.7
+FROM alpine:3.14
 
 # Set Environments values for PHP
 ENV PHP_MEMORY_LIMIT    256M
